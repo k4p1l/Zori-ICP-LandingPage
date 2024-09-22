@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Aesthetic;
+  src: url(../../../public/fonts/Aesthetic-Regular.ttf);
+}
+
+@font-face {
+  font-family: Hanson;
+  src: url(../../../public/fonts/Hanson-Bold.otf);
+}
+
+@font-face {
+  font-family: up;
+  src: url(../../../public/fonts/upheavtt.ttf);
+}
+.fp-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  height: 100vh;
+}
+.first-bg {
+  position: absolute;
+  width: 100vw;
+  height: 550vh;
+  top: 0px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.left-content {
+  margin-left: 40px;
+}
+
+.left-content > h2 {
+  font-size: 60px;
+  color: #d2deff;
+  font-family: garamond;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.left-content .metaverse,
+.extraordinary {
+  font-size: 82px;
+  font-family: Hanson;
+  text-transform: uppercase;
+  background: linear-gradient(-90deg, #d7c3ff, #8143fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.extraordinary {
+  background: linear-gradient(270deg, #8143fe, #e0d0ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right-content > img {
+  padding-bottom: -40px;
+  margin-top: 20px;
+  -webkit-backdrop-filter: blur(5px) brightness(100%);
+  backdrop-filter: blur(2px) brightness(100%);
+  border-radius: 25px;
+  margin-right: 80px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+  right: 20px;
+  width: 400px;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats > div > h1 {
+  font-family: Hanson;
+  color: #d2deff;
+  font-size: 2.5em;
+}
+
+.stats > div > h2 {
+  font-family: Helvetica;
+  color: #d2deff;
+  font-size: 0.8rem;
+}
+
+.frosted-glass {
+  position: absolute;
+  bottom: 32vh;
+  right: 24vw;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 300px;
+  color: #d2deff;
+}
+
+.frosted-glass > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: up;
+  font-size: 1.35em;
+}
+.frosted-glass > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frosted-glass span {
+  color: rgb(0, 255, 0);
+  font-family: helvetica;
+  font-size: 0.5em;
+}
+
+.trusted-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: -120px;
+}
+
+.trusted-by h1 {
+  display: inline-block;
+  font-family: garamond;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.8em;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(206, 171, 255) 0%,
+    rgb(107, 110, 255) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.images {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: hanson;
+  src: url(../../../public/fonts/Hanson-Bold.otf);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  width: 80px;
+}
+
+.links {
+  display: flex;
+  font-family: hanson;
+  gap: 40px;
+  margin-top: -20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #dee7ff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 1;
+
+  /*  where the real magic happens  */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  background: rgba(225, 225, 225, 0.05);
+
+  mask-image: linear-gradient(
+    rgb(0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    rgb(0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  inset: -1rem 0;
+}
+
+.get-started {
+  margin-top: -20px;
+  margin-right: 30px;
+}
+
+.get-started a {
+  background: linear-gradient(-90deg, #ffbaf7 20%, #8143fe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  padding: 0.4rem 1.8rem;
+  border-radius: 28px;
+  cursor: pointer;
+  font-family: garamond;
+  font-style: italic;
+  border: 2px solid #ffbaf7;
+  filter: drop-shadow(0px 0px 0.55rem #0400ff);
+}
