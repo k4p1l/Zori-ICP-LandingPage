@@ -1,4 +1,4 @@
-import "./assets/css/SecondPage.css";
+import "./assets/css/Secondpage.css";
 import zori_land from "../public/images/spaces/zori land.png";
 import podcast from "../public/images/spaces/Podcast.jpg";
 import nature from "../public/images/spaces/Nature Space.jpg";
