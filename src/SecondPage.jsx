@@ -14,6 +14,7 @@ const SecondPage = () => {
           <div className="space">
             <div className="img-wrapper">
               <img src={zori_land} alt="" />
+              <div class="overlay">Coming Soon</div>
             </div>
             <p>Zori Land</p>
           </div>
@@ -21,12 +22,14 @@ const SecondPage = () => {
           <div className="space">
             <div className="img-wrapper">
               <img src={podcast} alt="" />
+              <div class="overlay">Coming Soon</div>
             </div>
             <p>Podcast Space</p>
           </div>
           <div className="space">
             <div className="img-wrapper">
               <img src={nature} alt="" />
+              <div class="overlay">Coming Soon</div>
             </div>
             <p>Nature Space</p>
           </div>

@@ -49,17 +49,39 @@
   overflow: hidden;
   width: 500px;
   border-radius: 20px;
+  position: relative;
 }
 
 .img-wrapper img {
   width: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(0%) contrast(120%);
   transition: all 0.5s ease;
 }
 
 .img-wrapper img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(100%);
   transform: scale(1.2);
+}
+
+/* Overlay text styling */
+.overlay {
+  font-family: hanson;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.img-wrapper:hover .overlay {
+  opacity: 1;
 }
 
 .space p {
@@ -94,6 +116,7 @@
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+  box-shadow: 2px 12px 12px rgba(0, 0, 0, 0.4);
 }
 
 .card::before {
