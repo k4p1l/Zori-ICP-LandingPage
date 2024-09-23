@@ -6,10 +6,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div>
-        <img className="logo" src={logo} alt="Zori" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="Zori" />
+        </Link>
       </div>
       <div className="links">
-        <Link to="/">Home</Link>
+        {/* <Link to="/">Home</Link> */}
         <Link to="/about">About Us</Link>
         <Link to="/marketplace">NFT Marketplace</Link>
         <Link to="/avatar">3d Avatar</Link>

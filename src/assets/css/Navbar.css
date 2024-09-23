@@ -37,16 +37,12 @@
   z-index: -1;
   top: 0;
   opacity: 1;
-
-  /*  where the real magic happens  */
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-
-  background: rgba(225, 225, 225, 0.05);
-
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.2);
   mask-image: linear-gradient(
     rgb(0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.8) 85%,
     rgba(0, 0, 0, 0) 100%
   );
 

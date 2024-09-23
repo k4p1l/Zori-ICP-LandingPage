@@ -3,6 +3,7 @@ import zori_land from "../public/images/spaces/zori land.png";
 import podcast from "../public/images/spaces/Podcast.jpg";
 import nature from "../public/images/spaces/Nature Space.jpg";
 import nft1 from "../public/images/nfts/1.jpg";
+import Tilt from "react-parallax-tilt";
 
 const SecondPage = () => {
   return (
@@ -10,45 +11,98 @@ const SecondPage = () => {
       <div>
         <h1>3D SPACES</h1>
         <div className="spaces">
-          <div className="img-wrapper">
-            <img src={zori_land} alt="" />
+          <div className="space">
+            <div className="img-wrapper">
+              <img src={zori_land} alt="" />
+            </div>
+            <p>Zori Land</p>
           </div>
 
-          <div className="img-wrapper">
-            <img src={podcast} alt="" />
+          <div className="space">
+            <div className="img-wrapper">
+              <img src={podcast} alt="" />
+            </div>
+            <p>Podcast Space</p>
           </div>
-          <div className="img-wrapper">
-            <img src={nature} alt="" />
+          <div className="space">
+            <div className="img-wrapper">
+              <img src={nature} alt="" />
+            </div>
+            <p>Nature Space</p>
           </div>
         </div>
       </div>
       <div>
         <h1>TRENDING NFTs</h1>
         <div className="cards">
-          <div className="card">
-            <div className="card-container">
-              <img src={nft1} alt="" />
-              <p>Stack Sorted</p>
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.5}
+            glareColor="#ffe23e"
+            glarePosition="all"
+            glareBorderRadius="16px"
+            scale="1.18"
+            transitionSpeed="2000"
+          >
+            <div className="card">
+              <div className="card-container">
+                <img src={nft1} alt="" />
+                <p>Avatar 1</p>
+                <p>12.25 ICP</p>
+              </div>
             </div>
-          </div>{" "}
-          <div className="card">
-            <div className="card-container">
-              <img src={nft1} alt="" />
-              <p>Stack Sorted</p>
+          </Tilt>
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.5}
+            glareColor="#ffe23e"
+            glarePosition="all"
+            glareBorderRadius="16px"
+            scale="1.18"
+            transitionSpeed="2000"
+          >
+            <div className="card">
+              <div className="card-container">
+                <img src={nft1} alt="" />
+                <p>Avatar 2</p>
+                <p>10 ICP</p>
+              </div>
             </div>
-          </div>{" "}
-          <div className="card">
-            <div className="card-container">
-              <img src={nft1} alt="" />
-              <p>Stack Sorted</p>
+          </Tilt>
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.5}
+            glareColor="#ffe23e"
+            glarePosition="all"
+            glareBorderRadius="16px"
+            scale="1.18"
+            transitionSpeed="2000"
+          >
+            <div className="card">
+              <div className="card-container">
+                <img src={nft1} alt="" />
+                <p>Avatar 3</p>
+                <p>15.75 ICP</p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="card-container">
-              <img src={nft1} alt="" />
-              <p>Stack Sorted</p>
+          </Tilt>
+          <Tilt
+            glareEnable={true}
+            glareMaxOpacity={0.5}
+            glareColor="#ffe23e"
+            glarePosition="all"
+            glareBorderRadius="16px"
+            scale="1.18"
+            transitionSpeed="2000"
+          >
+            <div className="card">
+              <div className="card-container">
+                <img src={nft1} alt="" />
+                <p>Avatar 4</p>
+                <p>8.75 ICP</p>
+              </div>
             </div>
-          </div>
+          </Tilt>
         </div>
       </div>
     </div>
