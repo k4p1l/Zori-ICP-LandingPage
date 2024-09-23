@@ -15,8 +15,8 @@
 
 .footer {
   position: absolute;
-  top: 480vh;
-  height: 70vh;
+  top: 490vh;
+  height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
