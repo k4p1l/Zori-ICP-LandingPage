@@ -12,20 +12,20 @@ const ThirdPage = () => {
       <div className="members">
         <div className="member">
           <div className="pfp-wrapper">
-            <img src={swati} alt="" />
-          </div>
-          <div className="info-wrapper">
-            <h2>Swati Goyal</h2>
-            <p>Advisor</p>
-          </div>
-        </div>
-        <div className="member">
-          <div className="pfp-wrapper">
             <img src={shweta} alt="" />
           </div>
           <div className="info-wrapper">
             <h2>Shweta Joshi</h2>
             <p>Co-Founder</p>
+          </div>
+        </div>
+        <div className="member">
+          <div className="pfp-wrapper">
+            <img src={swati} alt="" />
+          </div>
+          <div className="info-wrapper">
+            <h2>Swati Goyal</h2>
+            <p>Advisor</p>
           </div>
         </div>
       </div>

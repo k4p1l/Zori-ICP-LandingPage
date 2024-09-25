@@ -64,7 +64,7 @@
   -webkit-backdrop-filter: blur(5px) brightness(100%);
   backdrop-filter: blur(2px) brightness(100%);
   border-radius: 25px;
-  margin-right: 80px;
+  margin-right: 100px;
 }
 
 .stats {
@@ -96,14 +96,13 @@
 
 .frosted-glass {
   position: absolute;
-  bottom: 32vh;
+  bottom: 30vh;
   right: 24vw;
   padding: 14px;
-  margin-top: 20px;
   border-radius: 15px;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 380px;
   color: #d2deff;
 }
 
@@ -112,7 +111,7 @@
   justify-content: space-between;
   align-items: flex-start;
   font-family: up;
-  font-size: 1.35em;
+  font-size: 26px;
 }
 .frosted-glass > div > div {
   display: flex;
@@ -122,7 +121,7 @@
 .frosted-glass span {
   color: rgb(0, 255, 0);
   font-family: helvetica;
-  font-size: 0.5em;
+  font-size: 14px;
 }
 
 .trusted-by {
@@ -134,7 +133,6 @@
 }
 
 .trusted-by h1 {
-  display: inline-block;
   font-family: garamond;
   font-style: italic;
   font-weight: normal;
@@ -143,7 +141,7 @@
   background: linear-gradient(
     90deg,
     rgb(206, 171, 255) 0%,
-    rgb(107, 110, 255) 100%
+    rgb(155, 157, 255) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -154,4 +152,14 @@
   gap: 40px;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.images img {
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.images img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
