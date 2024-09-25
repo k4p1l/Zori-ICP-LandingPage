@@ -59,13 +59,12 @@
 }
 
 .img-wrapper img:hover {
-  filter: invert(120%) grayscale(100%) contrast(100%);
-  transform: scale(1.2);
+  filter: grayscale(100%) contrast(80%);
+  transform: scale(1.2) ;
 }
 
-/* target 2nd child  of im-wrapper*/
-.img-wrapper:nth-child(2) img:hover {
-  filter: grayscale(10%) contrast(100%);
+.inverted img:hover {
+  filter: invert(120%) grayscale(100%) contrast(180%);
   transform: scale(1.2);
 }
 

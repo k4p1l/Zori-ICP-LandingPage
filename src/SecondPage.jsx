@@ -12,7 +12,7 @@ const SecondPage = () => {
         <h1>3D SPACES</h1>
         <div className="spaces">
           <div className="space">
-            <div className="img-wrapper">
+            <div className="img-wrapper inverted">
               <img src={zori_land} alt="" />
               <div class="overlay-text">Coming Soon</div>
             </div>
