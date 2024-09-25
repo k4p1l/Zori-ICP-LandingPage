@@ -156,10 +156,10 @@
 
 .images img {
   filter: grayscale(100%);
-  transition: all 0.4s ease;
+  transition: all 0.7s ease;
 }
 
 .images img:hover {
   filter: grayscale(0%);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
