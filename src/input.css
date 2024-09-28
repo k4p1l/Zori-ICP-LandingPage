@@ -11,6 +11,7 @@
 body {
   overflow-x: hidden;
   background-color: #2e177b;
+  background: url(./assets/purple.jpg) no-repeat right center fixed;
 }
 
 /* body::-webkit-scrollbar {

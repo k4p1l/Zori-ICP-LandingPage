@@ -16,7 +16,7 @@ const ThirdPage = () => {
           </div>
           <div className="info-wrapper">
             <h2>Shweta Joshi</h2>
-            <p>Co-Founder</p>
+            <p>Founder</p>
           </div>
         </div>
         <div className="member">

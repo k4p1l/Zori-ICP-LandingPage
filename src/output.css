@@ -580,11 +580,6 @@ video {
   color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
-.invert {
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -594,6 +589,7 @@ video {
 body {
   overflow-x: hidden;
   background-color: #2e177b;
+  background: url(./assets/purple.jpg) no-repeat right center fixed;
 }
 
 /* body::-webkit-scrollbar {
