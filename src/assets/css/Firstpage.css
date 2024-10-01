@@ -12,6 +12,12 @@
   font-family: up;
   src: url(../../../public/fonts/upheavtt.ttf);
 }
+
+@font-face {
+  font-family: garamond;
+  src: url(../../../public/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
 .fp-main {
   display: flex;
   justify-content: space-between;
@@ -180,7 +186,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
   .left-content {
     margin-left: 10px;
@@ -210,6 +216,7 @@
   .stats {
     width: 200px;
     margin: 0 auto;
+    right: 0;
   }
 
   .stats > div > h1 {
@@ -221,9 +228,9 @@
   }
 
   .frosted-glass {
-    display: none;
+    /* display: none; */
     width: 240px;
-    bottom: 50vh;
+    bottom: 28vh;
     right: 5vw;
     padding: 6px 12px;
     border-radius: 10px;
@@ -233,7 +240,7 @@
     font-size: 16px;
   }
   .trusted-by {
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
 
   .images {

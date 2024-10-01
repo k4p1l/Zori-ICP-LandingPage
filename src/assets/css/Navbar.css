@@ -2,6 +2,11 @@
   font-family: hanson;
   src: url(../../../public/fonts/Hanson-Bold.otf);
 }
+@font-face {
+  font-family: garamond;
+  src: url(../../../public/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

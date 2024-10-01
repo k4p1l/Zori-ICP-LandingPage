@@ -13,6 +13,11 @@
   src: url(../../../public/fonts/upheavtt.ttf);
 }
 
+@font-face {
+  font-family: garamond;
+  src: url(../../../public/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
 .avatar-container {
   margin-top: 4em;
   padding: 4em;
