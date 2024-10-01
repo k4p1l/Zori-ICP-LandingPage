@@ -127,3 +127,27 @@
   transform: translateX(8px);
   padding-right: 20px;
 }
+
+@media (max-width: 767px) {
+  .avatar-container {
+    padding: 1em;
+    flex-direction: column;
+  }
+  .avatar-container h1 {
+    font-size: 40px;
+    text-wrap: wrap;
+  }
+
+  .avatar-col2 {
+    display: none;
+  }
+
+  .avatar-buttons {
+    gap: 2em;
+  }
+
+  .avatar-buttons a {
+    padding: 0.2rem 1.2rem;
+    font-size: 1.5rem;
+  }
+}
