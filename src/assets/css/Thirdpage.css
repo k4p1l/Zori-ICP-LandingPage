@@ -92,3 +92,13 @@
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
 }
+
+@media (max-width: 767px) {
+  .third-page h1 {
+    font-size: 2.5em;
+    margin-top: 100px;
+  }
+  .members {
+    flex-wrap: wrap;
+  }
+}

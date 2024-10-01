@@ -4,10 +4,10 @@ import Spline from "@splinetool/react-spline";
 const AboutUs = () => {
   return (
     <div className="about-container">
-      <Spline
+      {/* <Spline
         className="spline"
         scene="https://prod.spline.design/pS37xcnoiKly6vou/scene.splinecode"
-      />
+      /> */}
       <div className="au-content">
         <div className="au-row1">
           <h1>About Us</h1>

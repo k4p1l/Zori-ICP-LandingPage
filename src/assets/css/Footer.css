@@ -13,10 +13,17 @@
   src: url(../../../public/fonts/upheavtt.ttf);
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .footer {
-  position: absolute;
-  top: 490vh;
-  height: 60vh;
+  margin-top: auto;
+  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -127,4 +134,28 @@
 .footer-content a:hover ion-icon {
   opacity: 1;
   transform: translateX(4px);
+}
+
+@media (max-width: 767px) {
+  .footer-content > div {
+    gap: 4px;
+    padding: 0px;
+    margin-right: 10px;
+  }
+  .footer-content h2 {
+    font-size: 1.2em;
+  }
+
+  .footer-content a {
+    font-size: 1em;
+  }
+  .row2 p {
+    font-size: 1em;
+    text-wrap: pretty;
+    padding-bottom: 10px;
+  }
+
+  .footer img{
+    display: none;
+  }
 }

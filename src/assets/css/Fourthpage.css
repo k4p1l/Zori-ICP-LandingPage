@@ -128,3 +128,16 @@
   opacity: 1;
   transform: translateX(-10px) scale(1.1);
 }
+
+@media (max-width: 767px) {
+  .fourth-page h1 {
+    font-size: 2.5em;
+  }
+  .cu-form {
+    max-width: 550px;
+  }
+
+  .label {
+    font-size: 1.2rem;
+  }
+}

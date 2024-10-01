@@ -9,10 +9,7 @@
 }
 
 .about-container {
-  background-color: #0e0e0e;
   height: 100%;
-  width: 100vw;
-  position: absolute;
   z-index: 0;
 }
 .spline {
@@ -22,6 +19,8 @@
 
 .au-content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   gap: 12px;
   max-width: 1200px;
@@ -29,7 +28,6 @@
 }
 
 .au-row1 {
-  font-size: 1.75em;
   -webkit-backdrop-filter: blur(20px) brightness(100%);
   backdrop-filter: blur(20px) brightness(100%);
   background-color: rgba(3, 0, 20, 0.3);
@@ -48,15 +46,16 @@
 .au-row1 h1,
 .au-row2 h1 {
   font-family: mollie glaston;
+  font-weight: bold;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
     90deg,
     rgb(231.72, 209.95, 255) 30%,
-    rgb(82, 39, 133) 60%
+    rgb(82, 39, 133) 90%
   );
   background-clip: text;
-  font-size: 4em;
+  font-size: 3.6em;
   text-align: center;
 }
 
@@ -69,7 +68,7 @@
   font-family: power;
   font-weight: 500;
   color: #e8d2ff;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.4;
   margin-bottom: 40px;
   letter-spacing: 0.2px;
@@ -82,4 +81,33 @@
   background-color: rgba(3, 0, 20, 0.3);
   border-radius: 25px;
   padding: 0.5em 2.5em;
+}
+
+@media (max-width: 767px) {
+  .au-content {
+    max-width: 767px;
+    margin: 52px auto;
+    padding: 10px 20px;
+  }
+
+  .au-row1,
+  .au-row2 {
+    padding: 10px 14px;
+  }
+  
+  .au-row1 h1,
+  .au-row2 h1 {
+    font-size: 1.5em;
+  }
+
+  .au-row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-wrap: pretty;
+  }
+
+  .au-row2 p {
+    font-size: 1em;
+  }
 }

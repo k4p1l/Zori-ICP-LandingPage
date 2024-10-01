@@ -11,12 +11,18 @@ const Avatar = () => {
           with <br />
           <span>AI avatar?</span>
         </h1>
+        <p>
+          Connect More Meaningfully: <br /> Designed for virtual meetings,
+          gaming and social fun.{" "}
+        </p>
         <div className="avatar-buttons">
-          <div>
+          <div className="avatar-button">
             <a href="zoriAvatar">Zori Avatar</a>
+            <ion-icon name="arrow-forward-sharp"></ion-icon>
           </div>
-          <div>
+          <div className="avatar-button">
             <a href="zoriAvatar">AI Avatar</a>
+            <ion-icon name="arrow-forward-sharp"></ion-icon>
           </div>
         </div>
       </div>

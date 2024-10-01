@@ -145,8 +145,11 @@
 .card-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card-container p {
@@ -161,4 +164,41 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .second-page h1 {
+    font-size: 2.5em;
+  }
+  .spaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  .space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .space p {
+    font-size: 1em;
+    margin-top: 6px;
+  }
+
+  .img-wrapper {
+    width: 200px;
+  }
+
+  .cards {
+    max-width: 760px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
