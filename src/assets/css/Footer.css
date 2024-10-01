@@ -142,6 +142,7 @@
 }
 
 @media (max-width: 767px) {
+  
   .footer-content > div {
     gap: 4px;
     padding: 0px;

@@ -1,6 +1,6 @@
 import "./assets/css/Footer.css";
 import logo from "./assets/zori-logo.png";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -16,26 +16,26 @@ const Footer = () => {
               <div>
                 <h2>Quick Links</h2>
 
-                <a href="#home">
+                <Link to="/">
                   Home<ion-icon name="arrow-forward-sharp"></ion-icon>
-                </a>
+                </Link>
 
-                <a href="#about">
+                <Link to="/about">
                   About Us<ion-icon name="arrow-forward-sharp"></ion-icon>
-                </a>
+                </Link>
 
-                <a href="#services">
+                <Link to="/marketplace">
                   NFT Marketplace
                   <ion-icon name="arrow-forward-sharp"></ion-icon>
-                </a>
+                </Link>
 
-                <a href="#contact">
+                <Link to="/spaces">
                   3D Spaces<ion-icon name="arrow-forward-sharp"></ion-icon>
-                </a>
+                </Link>
 
-                <a href="#contact">
+                <Link to="/avatar">
                   3D Avatar<ion-icon name="arrow-forward-sharp"></ion-icon>
-                </a>
+                </Link>
               </div>
               <div>
                 <h2>Follow Us</h2>

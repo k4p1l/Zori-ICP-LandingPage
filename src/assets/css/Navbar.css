@@ -19,7 +19,7 @@
   width: 100vw;
 }
 .logo {
-  width: 80px;
+  width: 70px;
 }
 
 .links {
@@ -33,12 +33,12 @@
   text-decoration: none;
   color: #dee7ff;
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .backdrop {
   width: 100%;
-  height: 100%;
+  height: 110%;
   position: absolute;
   z-index: -1;
   top: 0;
