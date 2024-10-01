@@ -221,6 +221,7 @@
   }
 
   .frosted-glass {
+    display: none;
     width: 240px;
     bottom: 50vh;
     right: 5vw;
