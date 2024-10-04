@@ -1,4 +1,4 @@
-import bg from "./assets/Group 3.png";
+import bgvid from "./assets/zori.mp4";
 import "./assets/css/Firstpage.css";
 import avatar from "./assets/avatar.svg";
 import dfinity from "./assets/dfinity logo 1.png";
@@ -9,7 +9,9 @@ const FirstPage = () => {
   return (
     <>
       <main className="fp-main">
-        <img className="first-bg" src={bg} alt="bg" />
+        {/* <video className="bg-video" autoPlay muted loop>
+          <source src={bgvid} type="video/mp4" />
+        </video> */}
 
         <div className="left-content">
           <h2>Discover the</h2>
@@ -58,4 +60,3 @@ const FirstPage = () => {
 };
 
 export default FirstPage;
-
