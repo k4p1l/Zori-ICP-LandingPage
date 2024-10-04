@@ -14,6 +14,10 @@ body {
   background: url(./assets/purple.jpg) no-repeat right center fixed;
 }
 
+Canvas {
+  border: 2px white solid;
+}
+
 /* body::-webkit-scrollbar {
   display: none;
 } */

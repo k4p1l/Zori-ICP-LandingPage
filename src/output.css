@@ -554,6 +554,18 @@ video {
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -562,12 +574,29 @@ video {
   display: flex;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.bg-\[\#2E177B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 23 123 / var(--tw-bg-opacity));
 }
 
 .text-5xl {
@@ -580,6 +609,11 @@ video {
   color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -590,6 +624,10 @@ body {
   overflow-x: hidden;
   background-color: #2e177b;
   background: url(./assets/purple.jpg) no-repeat right center fixed;
+}
+
+Canvas {
+  border: 2px white solid;
 }
 
 /* body::-webkit-scrollbar {

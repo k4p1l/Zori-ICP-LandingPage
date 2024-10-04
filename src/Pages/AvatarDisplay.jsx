@@ -1,0 +1,116 @@
+import React, { Suspense, useRef, useEffect } from "react";
+import { Canvas, useThree } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+
+function AvatarModel({ url }) {
+  const { scene } = useGLTF(url);
+  return <primitive object={scene} scale={2} />;
+}
+
+function CaptureWrapper({ onCapture }) {
+  const { gl, scene, camera } = useThree();
+
+  useEffect(() => {
+    onCapture({ gl, scene, camera });
+  }, [gl, scene, camera, onCapture]);
+
+  return null;
+}
+
+export default function AvatarDisplay() {
+  const avatarUrl = localStorage.getItem("userAvatar");
+  const downloadRef = useRef();
+  const logoRef = useRef(new Image());
+  const captureDataRef = useRef(null);
+
+  useEffect(() => {
+    logoRef.current.src = "src/assets/zori-logo.png";
+    logoRef.current.onload = () => console.log("Logo loaded successfully.");
+    logoRef.current.onerror = () => console.error("Failed to load the logo.");
+  }, []);
+
+  const handleCapture = ({ gl, scene, camera }) => {
+    captureDataRef.current = { gl, scene, camera };
+  };
+
+  const captureImage = () => {
+    if (!captureDataRef.current) {
+      console.error("Capture data is not available.");
+      return;
+    }
+
+    const { gl, scene, camera } = captureDataRef.current;
+    gl.render(scene, camera);
+    const canvas = gl.domElement;
+    const dataURL = canvas.toDataURL("image/png");
+
+    const finalCanvas = document.createElement("canvas");
+    finalCanvas.width = canvas.width;
+    finalCanvas.height = canvas.height;
+    const context = finalCanvas.getContext("2d");
+
+    const avatarImage = new Image();
+    avatarImage.src = dataURL;
+    avatarImage.onload = () => {
+      context.drawImage(avatarImage, 0, 0);
+      context.drawImage(
+        logoRef.current,
+        finalCanvas.width - 100,
+        finalCanvas.height - 100,
+        80,
+        80
+      );
+
+      const finalURL = finalCanvas.toDataURL("image/png");
+      const link = document.createElement("a");
+      link.href = finalURL;
+      link.download = "avatar_with_logo.png";
+      link.click();
+    };
+
+    avatarImage.onerror = () => {
+      console.error("Failed to create avatar image.");
+    };
+  };
+
+  return (
+    <div className="mt-28" style={{ height: "1000px" }}>
+      {avatarUrl ? (
+        <div>
+          <h2>Your 3D Avatar:</h2>
+          <Canvas
+            style={{ height: "500px", width: "500px" }}
+            camera={{ position: [0, 3, 10], fov: 30 }}
+          >
+            <CaptureWrapper onCapture={handleCapture} />
+            <ambientLight intensity={0.5} />
+            <directionalLight intensity={1.5} position={[0, 1, 2]} />
+            <Suspense fallback={null}>
+              <AvatarModel url={avatarUrl} />
+            </Suspense>
+            <OrbitControls
+              enableZoom={true}
+              enablePan={true}
+              zoomSpeed={1}
+              minDistance={1}
+              maxDistance={10}
+              target={[0, 2, 0]}
+              enableDamping={true}
+              dampingFactor={0.5}
+            />
+          </Canvas>
+
+          <button
+            onClick={captureImage}
+            ref={downloadRef}
+            className="download-button"
+          >
+            Download Image with Logo
+          </button>
+        </div>
+      ) : (
+        <p>No avatar found. Please create one first.</p>
+      )}
+    </div>
+  );
+}

@@ -1,24 +1,17 @@
 import "../assets/css/aboutUs.css";
-import Spline from "@splinetool/react-spline";
+import zorivid from "../assets/zori-vid.mp4";
 
 const AboutUs = () => {
   return (
     <div className="about-container">
-      {/* <Spline
-        className="spline"
-        scene="https://prod.spline.design/pS37xcnoiKly6vou/scene.splinecode"
-      /> */}
       <div className="au-content">
         <div className="au-row1">
-          <h1>About Us</h1>
-          <p>
-            The Zori is an innovative online marketplace built on web3 by ICP
-            that deals in NFT trading and metaverse solutions for B2B and B2C
-            users.
-          </p>
-        </div>
-        <div className="au-row2">
-          <div className="au-col1">
+          <div className="vid">
+            <video autoPlay muted loop>
+              <source src={zorivid} type="video/mp4" />
+            </video>
+          </div>
+          <div className="au-col2">
             <h1>Mission</h1>
             <p>
               Empower creators, connect communities, and revolutionize
@@ -26,6 +19,16 @@ const AboutUs = () => {
               marketplaces, immersive 3D spaces, and AI-driven avatars, built on
               a foundation of web3 and blockchain technology for B2B and B2C
               customers worldwide
+            </p>
+          </div>
+        </div>
+        <div className="au-row2">
+          <div className="au-col1">
+            <h1>About Us</h1>
+            <p>
+              The Zori is an innovative online marketplace built on web3 by ICP
+              that deals in NFT trading and metaverse solutions for B2B and B2C
+              users.
             </p>
           </div>
           <div className="au-col2">

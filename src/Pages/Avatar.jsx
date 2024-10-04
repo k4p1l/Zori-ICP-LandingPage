@@ -1,6 +1,7 @@
 import "../assets/css/avatar.css";
 import avatar from "../assets/zori-gif.gif";
 import Tilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 
 const Avatar = () => {
   return (
@@ -21,7 +22,7 @@ const Avatar = () => {
             <ion-icon name="arrow-forward-sharp"></ion-icon>
           </div>
           <div className="avatar-button">
-            <a href="zoriAvatar">AI Avatar</a>
+            <Link to="/create_avatar">AI Avatar</Link>
             <ion-icon name="arrow-forward-sharp"></ion-icon>
           </div>
         </div>

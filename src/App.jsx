@@ -11,6 +11,9 @@ import AboutUs from "./Pages/AboutUs";
 import Marketplace from "./Pages/Marketplace";
 import Avatar from "./Pages/Avatar";
 import Spaces from "./Pages/Spaces";
+import AvatarCreatorComponent from "./Pages/AvatarCreation";
+import AvatarDisplay from "./Pages/AvatarDisplay";
+import GetStarted from "./Pages/GetStarted";
 
 function LandingPage() {
   return (
@@ -51,6 +54,9 @@ function App() {
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/avatar" element={<Avatar />} />
         <Route path="/spaces" element={<Spaces />} />
+        <Route path="/create_avatar" element={<AvatarCreatorComponent />} />
+        <Route path="/avatar-display" element={<AvatarDisplay />} />
+        <Route path="/getStarted" element={<GetStarted />} />
       </Routes>
     </Router>
   );
