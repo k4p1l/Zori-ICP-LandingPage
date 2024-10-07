@@ -4,10 +4,21 @@ import podcast from "../public/images/spaces/Podcast.jpg";
 import nature from "../public/images/spaces/Nature Space.jpg";
 import nft1 from "../public/images/nfts/1.jpg";
 import Tilt from "react-parallax-tilt";
+import dfinity from "./assets/dfinity logo 1.png";
+import icp from "./assets/download 1.png";
+import icp_in from "./assets/icp in 1.png";
 
 const SecondPage = () => {
   return (
     <div className="second-page">
+      <div className="trusted-by">
+        <h1>Trusted By</h1>
+        <div className="images">
+          <img src={dfinity} alt="" />
+          <img src={icp} alt="" />
+          <img src={icp_in} alt="" />
+        </div>
+      </div>
       <div>
         <h1>3D SPACES</h1>
         <div className="spaces">

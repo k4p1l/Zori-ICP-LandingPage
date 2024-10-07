@@ -6,6 +6,10 @@
   font-family: garamond;
   src: url(../../../public/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: power;
+  src: url(../../../public/fonts/PowerGroteskTRIAL-Medium.otf);
+}
 
 .navbar {
   display: flex;
@@ -66,18 +70,24 @@
 }
 
 .get-started a {
-  background: linear-gradient(-90deg, #ffbaf7 20%, #8143fe 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(206, 171, 255) 40%,
+    rgb(107, 110, 255) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
   font-size: 1.5rem;
   padding: 0.4rem 1.8rem;
   border-radius: 32px;
   cursor: pointer;
-  font-family: garamond;
-  font-style: italic;
-  border: 2px solid #ffbaf7;
-  filter: drop-shadow(0px 0px 0.55rem #0400ff);
+  font-family: power;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid rgb(200, 160, 255);
+  filter: drop-shadow(1px 1px 0.8rem rgb(138, 54, 255));
+  color: #dee7ff;
 }
 
 /* Phones and small devices */

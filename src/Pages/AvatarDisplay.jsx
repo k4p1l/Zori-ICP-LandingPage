@@ -76,10 +76,10 @@ export default function AvatarDisplay() {
   return (
     <div className="mt-28" style={{ height: "1000px" }}>
       {avatarUrl ? (
-        <div>
+        <div className="avatar-display">
           <h2>Your 3D Avatar:</h2>
           <Canvas
-            style={{ height: "500px", width: "500px" }}
+            style={{ height: "500px", width: "600px" }}
             camera={{ position: [0, 3, 10], fov: 30 }}
           >
             <CaptureWrapper onCapture={handleCapture} />
@@ -100,12 +100,8 @@ export default function AvatarDisplay() {
             />
           </Canvas>
 
-          <button
-            onClick={captureImage}
-            ref={downloadRef}
-            className="download-button"
-          >
-            Download Image with Logo
+          <button onClick={captureImage} ref={downloadRef}>
+            Download Image
           </button>
         </div>
       ) : (

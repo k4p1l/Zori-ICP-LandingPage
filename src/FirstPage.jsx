@@ -9,18 +9,15 @@ const FirstPage = () => {
   return (
     <>
       <main className="fp-main">
-        {/* <video className="bg-video" autoPlay muted loop>
+        <video className="bg-video" autoPlay muted loop>
           <source src={bgvid} type="video/mp4" />
-        </video> */}
+        </video>
 
         <div className="left-content">
-          <h2>Discover the</h2>
-          <h1 className="metaverse">METAVERSE</h1>
-          <h2>Collect and Sell</h2>
-          <h1 className="extraordinary">EXTRAORDINARY NFTS</h1>
+          <h1>world’s first gamified Web3 launchpad</h1>
         </div>
 
-        <div className="right-content">
+        {/* <div className="right-content">
           <img src={avatar} alt="" />
           <div className="stats">
             <div>
@@ -45,16 +42,8 @@ const FirstPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
-      <div className="trusted-by">
-        <h1>Trusted By</h1>
-        <div className="images">
-          <img src={dfinity} alt="" />
-          <img src={icp} alt="" />
-          <img src={icp_in} alt="" />
-        </div>
-      </div>
     </>
   );
 };

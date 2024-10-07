@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: up;
-  src: url(../../../public/fonts/upheavtt.ttf);
+  font-family: power;
+  src: url(../../../public/fonts/PowerGroteskTRIAL-Medium.otf);
 }
 
 @font-face {
@@ -20,7 +20,7 @@
 
 .fp-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: -20px;
   height: 100vh;
@@ -37,26 +37,21 @@
 }
 
 .left-content {
-  margin-left: 40px;
+  text-align: center;
 }
 
-.left-content > h2 {
-  font-size: 60px;
-  color: #d2deff;
-  font-family: garamond;
-  font-weight: normal;
-  font-style: italic;
-}
-
-.left-content .metaverse,
-.extraordinary {
-  font-size: 82px;
-  font-family: Hanson;
+.left-content h1 {
+  font-size: 48px;
+  font-family: power;
   text-transform: uppercase;
-  background: linear-gradient(-90deg, #d7c3ff, #8143fe);
+  /* background: linear-gradient(-90deg, #ffffff, #9966ff);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  /* color: #eae0ff; */
+  color: white;
+  mix-blend-mode: difference;
+  font-weight: bold;
 }
 
 .extraordinary {

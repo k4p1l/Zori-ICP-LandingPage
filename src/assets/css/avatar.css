@@ -156,3 +156,117 @@
     font-size: 1.5rem;
   }
 }
+
+.avatar-creator-component button {
+  color: #f7f1ff;
+}
+
+.avatar-creator-component .btn {
+  position: absolute;
+  top: 20px;
+  right: 10vw;
+  border: none;
+  font-size: 18px;
+  color: #ceabff;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.modal-box .close-btn {
+  color: black;
+}
+
+.modal-action {
+  margin-top: 0;
+}
+
+.overlay-logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 72px;
+  padding-right: 20px;
+  background-color: #15161f;
+}
+
+.overlay-link {
+  position: absolute;
+  top: 50vh;
+  left: 1vw;
+  color: rgb(239, 225, 255);
+}
+
+Canvas {
+  background: linear-gradient(#000, #381f73);
+  border-radius: 12px;
+}
+
+.avatar-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar-display h2 {
+  color: rgb(239, 225, 255);
+  font-family: hanson;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.avatar-display button {
+  color: rgb(239, 225, 255);
+  border-bottom: 2px solid #e7d6ff;
+}
+
+@media (max-width: 767px) {
+  .overlay-logo {
+    top: 5px;
+    left: 5px;
+    height: 56px;
+  }
+  .avatar-creator-component .btn {
+    top: 36px;
+    right: 0px;
+    border: none;
+    font-size: 14px;
+    color: #ceabff;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.modal {
+  width: 120vw;
+  height: 120vh;
+  background-color: transparent;
+}
+
+.model-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-box {
+  background-color: white;
+  padding: 28px 38px;
+  border-radius: 10px;
+}
+
+.modal-action {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+ol {
+  list-style-type: decimal; 
+  margin-left: 20px; 
+  padding-left: 0; 
+}

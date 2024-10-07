@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
 import ThirdPage from "./ThirdPage";
@@ -14,6 +13,9 @@ import Spaces from "./Pages/Spaces";
 import AvatarCreatorComponent from "./Pages/AvatarCreation";
 import AvatarDisplay from "./Pages/AvatarDisplay";
 import GetStarted from "./Pages/GetStarted";
+
+import MainLayout from "./Layouts/MainLayout";
+import NoNavbarLayout from "./Layouts/NoNavbarLayout";
 
 function LandingPage() {
   return (
@@ -44,19 +46,72 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
       <Routes>
         {/* Landing page with multiple sections */}
-        <Route path="/" element={<LandingPage />} />
-
-        {/* Other routes for individual pages */}
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/avatar" element={<Avatar />} />
-        <Route path="/spaces" element={<Spaces />} />
-        <Route path="/create_avatar" element={<AvatarCreatorComponent />} />
-        <Route path="/avatar-display" element={<AvatarDisplay />} />
-        <Route path="/getStarted" element={<GetStarted />} />
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <LandingPage />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <MainLayout>
+              <AboutUs />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/marketplace"
+          element={
+            <MainLayout>
+              <Marketplace />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/avatar"
+          element={
+            <MainLayout>
+              <Avatar />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/spaces"
+          element={
+            <MainLayout>
+              <Spaces />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/create_avatar"
+          element={
+            <NoNavbarLayout>
+              <AvatarCreatorComponent />
+            </NoNavbarLayout>
+          }
+        />
+        <Route
+          path="/avatar-display"
+          element={
+            <MainLayout>
+              <AvatarDisplay />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/getStarted"
+          element={
+            <MainLayout>
+              <GetStarted />
+            </MainLayout>
+          }
+        />
       </Routes>
     </Router>
   );
