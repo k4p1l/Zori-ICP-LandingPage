@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
 }
 
 body {
@@ -13,7 +16,10 @@ body {
   background-color: #2e177b;
   background: url(./assets/purple.jpg) no-repeat right center fixed;
 }
-
+button {
+  background-color: transparent;
+  border: none;
+}
 /* body::-webkit-scrollbar {
   display: none;
 } */

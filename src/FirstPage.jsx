@@ -14,7 +14,10 @@ const FirstPage = () => {
         </video>
 
         <div className="left-content">
-          <h1>world’s first gamified Web3 launchpad</h1>
+          <h1>
+            world’s first <br />
+            gamified Web3 launchpad
+          </h1>
         </div>
 
         {/* <div className="right-content">

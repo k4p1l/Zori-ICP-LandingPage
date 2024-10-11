@@ -34,9 +34,12 @@ const Navbar = () => {
           3D Spaces
         </Link>
       </div>
-      <div className="get-started">
-        <Link to="/getStarted">Get Started</Link>
-      </div>
+      <a
+        href="https://kikka-viaaa-aaaam-adawq-cai.icp0.io/getStarted"
+        className="get-started-wrapper"
+      >
+        <button className="get-started">Get Started ✨</button>
+      </a>
       <div className="backdrop"></div>
 
       {/* Hamburger menu for smaller screens */}

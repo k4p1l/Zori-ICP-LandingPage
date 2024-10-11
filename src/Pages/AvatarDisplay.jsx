@@ -24,9 +24,21 @@ export default function AvatarDisplay() {
   const captureDataRef = useRef(null);
 
   useEffect(() => {
-    logoRef.current.src = "src/assets/zori-logo.png";
-    logoRef.current.onload = () => console.log("Logo loaded successfully.");
-    logoRef.current.onerror = () => console.error("Failed to load the logo.");
+    const loadLogo = async () => {
+      try {
+        const img = new Image();
+        img.src = "src/zori_frontend/src/assets/zori-logo.png";
+        await new Promise((resolve, reject) => {
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+        logoRef.current = img;
+        console.log("Logo loaded successfully.");
+      } catch (error) {
+        console.error("Failed to load the logo.");
+      }
+    };
+    loadLogo();
   }, []);
 
   const handleCapture = ({ gl, scene, camera }) => {

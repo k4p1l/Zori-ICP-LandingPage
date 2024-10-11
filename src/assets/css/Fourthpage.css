@@ -47,6 +47,11 @@
   padding: 8px 8px 0px 8px;
 }
 
+.form-field select {
+  background-color: transparent;
+  color: #cccdff;
+}
+
 .label {
   font-family: Inter;
   font-size: 1.4rem;
